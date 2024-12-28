@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./javascript/script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
+    <header>🎮</header>
     <main>
-        <div id="r-p-s">
-            <button id="rock">Rock</button>
-            <button id="paper">Paper</button>
-            <button id="scissors">Scissors</button>
-        </div>
+      <div id="options">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+      </div>
     </main>
-</body>
+    <div class="roundInfo">
+      <p class="round"></p>
+      <p class="result"></p>
+    </div>
+    <div class="score">
+      <p></p>
+      <p id="winner"></p>
+    </div>
+  </body>
 </html>

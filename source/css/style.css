@@ -1,32 +1,73 @@
-@import url("https://fonts.googleapis.com/css2?family=Badeen+Display&family=Emilys+Candy&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Vinyl&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 *,
 *::before,
 *::after {
   margin: 0;
-  padding: 0;
+  padding: 0px;
   box-sizing: border-box;
 }
 
 html,
 body {
-  font-family: Roboto;
-  min-height: 100vh;
+  font-family: "Roboto", serif;
   display: flex;
   flex-direction: column;
+  background-color: #F8FAFC;
+  color: #9AA6B2;
 }
 
-#r-p-s {
+header {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+#options {
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 button {
-  font-family: "Rubik Vinyl", serif;
-  font-size: 36px;
   border: none;
-  border-radius: 6px;
+  border-radius: 12px;
+  background-color: #BCCCDC;
+  color: #EEEEEE;
   cursor: pointer;
-  padding: 8px 5vw;
+  width: 100px;
+  height: 50px;
+  font-size: 24px;
+}
+
+button:hover{
+  background-color: #D9EAFD;
+  color: #9AA6B2;
+  transition: 0.4s;
+}
+
+button:focus{
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 4px #4DA1A9;
+  transition: 0.4s;
+}
+
+.roundInfo {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.score {
+  margin: 6px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#winner {
+  margin-top: 10vh;
+  font-size: 62px;
+  color: goldenrod;
 }
